@@ -19,7 +19,6 @@ def copiar_archivos_con_control(origen, destino, con_fecha, sin_fecha):
 
             # Si el archivo está en la lista con fecha y ya existe, agregar timestamp
             if archivo in con_fecha and os.path.exists(ruta_destino):
-                #timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 timestamp = datetime.now().strftime("%d-%m-%y_%H.%M.%S")
                 
                 nuevo_nombre = f"{nombre}_{timestamp}{extension}"
