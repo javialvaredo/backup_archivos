@@ -127,11 +127,10 @@ def copiar_carpeta_firma_digital():
     carpeta_destino = "//Mateo01/Users/JAlvaredo/Cvserver - Documentos Office"
     copiar_carpeta_completa(carpeta_origen, carpeta_destino)
 
-
 def registrar_log(mensaje):
-    log_dir = "logs"
-    if not os.path.exists(log_dir):
-        os.makedirs(log_dir)
+    script_dir = os.path.dirname(os.path.abspath(__file__))  # Ruta absoluta al script
+    log_dir = os.path.join(script_dir, "logs")
+    os.makedirs(log_dir, exist_ok=True)
 
     log_path = os.path.join(log_dir, "backup_log.txt")
     timestamp = datetime.now().strftime("[%d-%m-%Y %H:%M:%S]")
