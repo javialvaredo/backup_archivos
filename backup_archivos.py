@@ -68,7 +68,7 @@ def copiar_carpeta_completa(origen, destino):
 
 def bakup_bancos():
     origen = "C:/Users/jalvaredo/OneDrive - CV CONTROL SA/SINCRO/BANCOS"
-    destino = "//MATEO01/Users/JAlvaredo/Cvserver - Documentos Office"
+    destino = "//MATEO01/Users/JAlvaredo/Cvserver - Documentos Office/backup/bancos"
     archivos_con_fecha = ["BANCOS actualizado.xlsm"]
     archivos_sin_fecha = []
     copiar_archivos_con_control(origen, destino, archivos_con_fecha, archivos_sin_fecha)
@@ -76,7 +76,7 @@ def bakup_bancos():
 
 def backup_carpeta_sincro():
     origen = "C:/Users/jalvaredo/OneDrive - CV CONTROL SA/SINCRO"
-    destino = "//MATEO01/Users/JAlvaredo/Cvserver - Documentos Office"
+    destino = "//MATEO01/Users/JAlvaredo/Cvserver - Documentos Office/backup"
     archivos_con_fecha = ["COBRANZAS CLAVES.xlsx"]
     archivos_sin_fecha = [
         "LISTADO DE COBRANZAS.xlsx",
@@ -88,7 +88,7 @@ def backup_carpeta_sincro():
 
 def backup_carpeta_sincronizados():
     origen = "C:/Users/jalvaredo/OneDrive - CV CONTROL SA/SINCRONIZADOS"
-    destino = "//MATEO01/Users/JAlvaredo/Cvserver - Documentos Office"
+    destino = "//MATEO01/Users/JAlvaredo/Cvserver - Documentos Office/backup"
     archivos_con_fecha = ["RECIBOS CALCULOS.xlsx"]
     archivos_sin_fecha = ["BANK deposito-CAJAS.xlsx",
                           "DNI.xls",
@@ -111,19 +111,19 @@ def backup_carpeta_sincronizados():
 def copiar_carpeta_dni():
     # Copia completa de la carpeta como respaldo adicional
     carpeta_origen = "C:/Users/jalvaredo/OneDrive - CV CONTROL SA/SINCRONIZADOS/DNI"
-    carpeta_destino = "//Mateo01/Users/JAlvaredo/Cvserver - Documentos Office"
+    carpeta_destino = "//Mateo01/Users/JAlvaredo/Cvserver - Documentos Office/backup"
     copiar_carpeta_completa(carpeta_origen, carpeta_destino)
     
 def copiar_carpeta_reclamos_prov_exterior():
     # Copia completa de la carpeta como respaldo adicional
     carpeta_origen = "C:/Users/jalvaredo/OneDrive - CV CONTROL SA/SINCRONIZADOS/STATEMENTS RECLAMOS PROV EXTERIOR"
-    carpeta_destino = "//Mateo01/Users/JAlvaredo/Cvserver - Documentos Office"
+    carpeta_destino = "//Mateo01/Users/JAlvaredo/Cvserver - Documentos Office/backup"
     copiar_carpeta_completa(carpeta_origen, carpeta_destino)
 
 def copiar_carpeta_firma_digital():
     # Copia completa de la carpeta como respaldo adicional
     carpeta_origen = "C:/Users/jalvaredo/OneDrive - CV CONTROL SA/SINCRONIZADOS/firma digital"
-    carpeta_destino = "//Mateo01/Users/JAlvaredo/Cvserver - Documentos Office"
+    carpeta_destino = "//Mateo01/Users/JAlvaredo/Cvserver - Documentos Office/backup"
     copiar_carpeta_completa(carpeta_origen, carpeta_destino)
 
 def registrar_log(mensaje):
